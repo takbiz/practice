@@ -1,24 +1,36 @@
+<head>
 <script> $hoge:))
 do hoge:
 ((
 </script>
+</head>
 
+<body>
 
+<haeder>
 aaaaaa
+</haeder>
 
-insert>ddd
+<main>
 <p>abcdefghifugafugafugafugafugafugafugafugafugafugafugafugafuga</p>
 
 bbbb
 
 ffffffff
+</main>
 
-
+<section>
 text2.2
+</section>
 
+<section>
 text2.3
+</section>
 
+<section>
 text2.1
+</section>
 
-
-
+<footer>
+hhhhhgo
+</footer>
