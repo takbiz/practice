@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 <script> $hoge:))
 do hoge:
@@ -34,3 +36,7 @@ text2.1
 <footer>
 hhhhhgo
 </footer>
+
+</body>
+
+</html>
