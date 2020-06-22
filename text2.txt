@@ -1,11 +1,17 @@
+<script> $hoge:))
+do hoge:
+((
+</script>
+
 
 aaaaaa
 
 insert>ddd
+<p>abcdefghifugafugafugafugafugafugafugafugafugafugafugafugafuga</p>
 
 bbbb
 
-cccc
+ffffffff
 
 
 text2.2
