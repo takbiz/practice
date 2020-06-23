@@ -1,42 +1,543 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script> $hoge:))
-do hoge:
-((
-</script>
+	<meta charset="utf-8">
+	<title>サンプルデザイン建築事務所</title>
+	<meta name="description" content="こちらはサンプルサイトです。東京都国立市のデザイン建築事務所です">
+	<!--favicon-->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!--OGPタグ-->
+	<meta property='og:type' content='practice'>
+	<meta property='og:title' content='practice'>
+
+
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<!--Googleフォント-->
+	<link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<!--FontAwesome-->
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<!--CSS-->
+	<link href="css/reset.css" media="all" rel="stylesheet" type="text/css">
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="js/photoswipe/photoswipe.css">
+
+	<!--JavaScript-->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/photoswipe/jquery.photoswipe.js"></script>
+	<script src="js/script.js"></script>
+
+	<!--PhotoSwipe呼び出し-->
+	<script>
+		;(function($){
+				$(function(){
+						$('a.swipe').photoSwipe();
+				});
+		})(jQuery);
+	</script>
+
+	<!--Toggle-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script>
+		$(function() {
+			$('.Toggle').click(function() {
+			$(this).toggleClass('active');
+			$('.menu').toggleClass('open');
+			});
+		});
+	</script>
+
+
 </head>
 
+
+
+
 <body>
+	<header>
+		<nav>
+			<div class="drawer">
+			 <!--- ロゴ ------>
+			 <h1><a href="index.html"><img class="site_logo" src="img/sample_logo.png" alt="格安ホームページ制作"></a></h1>
+		 
+				<!-- ハンバーガーメニュー --> 
+				<div class="Toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		 
+		 <div class="menu">
+			<ul>
+			 <li><a href="#works" class="scroll">WORKS</a></li>
+			 <li><a href="#service" class="scroll">SERVICE</a></li>
+			 <li><a href="#about" class="scroll">ABOUT</a></li>
+			 <li><a href="#showroom" class="scroll">SHOWROOM</a></li>
+			 <li><a href="#access" class="scroll">ACCESS</a></li>
+			 <li class="sp-contact"><a href="contact/"><i class="fas fa-envelope"></i>CONTACT</a></li>
 
-<haeder>
-aaaaaa
-</haeder>
+			 <!-- <a class="form" href="contact/"><i class="fas fa-envelope"></i>お問合わせ</a> -->
+			</ul>
+		 </div>
+		</nav>
+	</header>
 
-<main>
-<p>abcdefghifugafugafugafugafugafugafugafugafugafugafugafugafuga</p>
 
-bbbb
+		<!-- <header class="site-header">
+			<h1><a href="index.html"><img class="site_logo" src="img/LanWay_logo.png" alt="格安ホームページ制作"></a></h1>
+			<nav id="gnav">
+				<div class="gnav-wrapper">
+					<ul>
+						<li><a href="#works">Works</a></li>
+						<li><a href="#feature">Feature</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skill">Skill</a></li>
+						<li><a href="contact/">Company</a></li>
+					</ul>
+					<a class="form" href="contact/"><i class="fas fa-envelope"></i>お問合わせ</a>
+				</div>
+			</nav>
+		</header> -->
+		
 
-ffffffff
-</main>
 
-<section>
-text2.2
-</section>
+	<div id="wrapper">
+		<main>
+			<div class="main_imgBox">
 
-<section>
-text2.3
-</section>
+				<!-- <div class="main-bg">
+					<p class="main-title">Everywhere<br> you want to be</p>
+				</div> -->
 
-<section>
-text2.1
-</section>
+				<div class="main_img" style="background-image: url(img/big-bg2s.jpg)">
+				</div>
+				<div class="main_img" style="background-image: url(img/big-bg8rs.jpg)">
+				</div>
+				<div class="main_img" style="background-image: url(img/big-bg12rs.jpg)">
+				</div>
+				<div class="main_img" style="background-image: url(img/big-bg9rs.jpg)">
+				</div> 
+				<div class="main_img" style="background-image: url(img/big-bg11rs.jpg)">
+				</div>
+				<div class="main_img" style="background-image: url(img/big-bg14rs.jpg)">
+				</div>
+				<!-- <div class="main-bg"> -->
+				<p class="main-title">Everywhere<br> you want to be</p>
+				<!-- </div> -->
+				<p class="main-title2">There is always light behind the clouds.</p>
 
-<footer>
-hhhhhgo
-</footer>
+			</div>
+	
 
+			<section class="section" id="works">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							WORKS
+						</h2>
+						<div class="section-subtitle">
+							これまでの弊社が手掛けてきたプロジェクトのご紹介
+						</div>
+					</div>
+
+					<div class="card-wrapper">
+						<div class="works-card fadeInUp">
+							<div class="mo-trs">
+								<a href="img/works-a.jpg" class="swipe" rel="group1" title="テスト1">
+									<img src="img/works-a.jpg" alt="">
+								</a>
+							</div>
+							<div class="card-caption">
+                <div class="card-caption-title">アプリ開発</div>
+								<div class="card-caption-info">ios/Android（Swift/Java/C++/Kotlin）</div>
+							</div>
+						</div>
+
+						<div class="works-card fadeInUp trs10">
+							<div class="mo-trs">
+								<a href="img/works-a.jpg" class="swipe" rel="group1" title="テスト2">
+									<img src="img/works-a.jpg" alt="">
+								</a>
+							</div>
+							<div class="card-caption">
+                <div class="card-caption-title">アプリ開発</div>
+								<div class="card-caption-info">ios/Android（Swift/Java/C++/Kotlin）</div>
+							</div>		
+						</div>
+
+						<div class="works-card fadeInUp trs15">
+							<div class="mo-trs">
+								<a href="img/works-a.jpg" class="swipe" rel="group1" title="テスト3">
+									<img src="img/works-a.jpg" alt="">
+								</a>
+							</div>
+							<div class="card-caption">
+                <div class="card-caption-title">アプリ開発</div>
+								<div class="card-caption-info">ios/Android（Swift/Java/C++/Kotlin）</div>
+							</div>
+						</div>
+
+						<div class="works-card fadeInUp trs20">
+							<div class="mo-trs">
+								<a href="img/works-a.jpg" class="swipe" rel="group1" title="テスト4">
+									<img src="img/works-a.jpg" alt="">
+								</a>
+							</div>
+							<div class="card-caption">
+                <div class="card-caption-title">アプリ開発</div>
+								<div class="card-caption-info">ios/Android（Swift/Java/C++/Kotlin）</div>
+							</div>
+						</div>
+
+						<div class="works-card fadeInUp trs25">
+							<div class="mo-trs">
+								<a href="img/works-a.jpg" class="swipe" rel="group1" title="テスト5">
+									<img src="img/works-a.jpg" alt="">
+								</a>
+							</div>
+							<div class="card-caption">
+                <div class="card-caption-title">アプリ開発</div>
+								<div class="card-caption-info">ios/Android（Swift/Java/C++/Kotlin）</div>
+							</div>
+						</div>
+
+						<div class="works-card fadeInUp trs30">
+							<div class="mo-trs">
+								<a href="img/works-a.jpg" class="swipe" rel="group1" title="テスト6">
+									<img src="img/works-a.jpg" alt="">
+								</a>
+							</div>
+							<div class="card-caption">
+                <div class="card-caption-title">アプリ開発</div>
+								<div class="card-caption-info">ios/Android（Swift/Java/C++/Kotlin）</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+				</div>
+			</section>
+
+
+			<section class="section" id="service">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							SERVICE
+						</h2>
+						<div class="section-subtitle">
+							弊社のサービス紹介
+						</div>
+					</div>
+
+					<div class="service-wrapper fadeInUp">
+						<div class="service-img">
+							<img src="img/big-bg10rs.jpg">
+							<div class="service-caption">
+								service service service service serice
+							</div>
+						</div>
+
+						<div class="service-desc">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section-bg" id="about">
+			<section class="section-bg-black">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title-white">
+							ABOUT
+						</h2>
+						<div class="section-subtitle-white">
+							弊社のご紹介
+						</div>
+					</div>
+					
+					<div class="about-desc fadeInUp trs20">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie ex quis erat euismod sodales. Pellentesque ultricies ipsum rhoncus pellentesque euismod. Proin in lacus elit. Fusce semper metus sed quam gravida, sit amet mollis lacus auctor. Cras venenatis, neque id vulputate semper, lorem velit sodales dolor, placerat fringilla enim dui ac sapien. Quisque dignissim venenatis metus eu vehicula. Maecenas semper mi vitae scelerisque dictum.Suspendisse potenti. Aliquam gravida ultrices dolor ultricies vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac justo et nulla dictum tincidunt ut eget turpis.
+						</p>
+
+					</div>
+
+
+				</div>
+			</section>
+			</section>
+
+
+			<section class="section" id="float">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							TOPICS
+						</h2>
+						<div class="section-subtitle">
+							SAMPLE CORPの最新情報のご紹介
+						</div>
+					</div>
+					<div class="float-wrapper fadeInUp">
+						<div class="img-float">
+							<img src="img/big-bg8rs.jpg">
+							<div class="img-float-caption">
+								The latest news that arrives from the scene
+							</div>
+						</div>
+
+						<div class="article-float fadeInUp trs10">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie ex quis erat euismod sodales. Pellentesque ultricies ipsum rhoncus pellentesque euismod. Proin in lacus elit. Fusce semper metus sed quam gravida, sit amet mollis lacus auctor. Cras venenatis, neque id vulputate semper, lorem velit sodales dolor, placerat fringilla enim dui ac sapien. Quisque dignissim venenatis metus eu vehicula. Maecenas semper mi vitae scelerisque dictum. Suspendisse potenti. Aliquam gravida ultrices dolor ultricies vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac justo et nulla dictum tincidunt ut eget turpis. Aliquam egestas lorem eu enim rhoncus, sed sagittis enim condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam nunc erat, vehicula a rutrum et, tempor at ante. Fusce laoreet consequat tincidunt.<br>Sed in convallis nisl. Praesent venenatis vel dolor vel varius. Aliquam felis turpis, maximus vitae augue vitae, pellentesque dictum massa. Suspendisse non ex porttitor neque condimentum vehicula at vel diam. Etiam viverra urna odio, ut facilisis elit feugiat vitae. Proin ultrices auctor nibh non pellentesque. Sed sed luctus dui, et scelerisque est. Nunc ultricies libero vitae rutrum dictum. Sed vel diam feugiat, lobortis neque sit amet, dapibus nulla. Nam et nibh at nisl accumsan ornare ut quis enim. Donec venenatis et erat nec aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						 	</p>
+				  	</div>
+					</div>
+				</div>
+			</section>
+<!-- 
+			<section class="section" id="flexbox">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							Flexbox
+						</h2>
+						<div class="section-subtitle">
+							Flexboxの検証です。ボタンの位置固定とボタン内TEXTの上下左右中央
+						</div>
+					</div>
+
+					<div class="flexbox-wrapper">
+						<div class="flexbox-card">
+							<a href="">
+							<img src="img/43.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。</p>
+							<a href=""><p class="btn">READ MORE</p></a>
+						</div>
+
+						<div class="flexbox-card">
+							<a href="">
+							<img src="img/43.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+							<a href=""><p class="btn">READ MORE</p></a>
+						</div>
+
+						<div class="flexbox-card">
+							<a href="">
+							<img src="img/43.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+							<a href=""><p class="btn">READ MORE</p></a>
+						</div>
+
+						<div class="flexbox-card">
+							<a href="">
+							<img src="img/43.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+							<a href=""><p class="btn">READ MORE</p></a>
+						</div>
+
+						<div class="flexbox-card">
+							<a href="">
+							<img src="img/43.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+							<a href=""><p class="btn">READ MORE</p></a>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<section class="section-bg2" id="showroom">
+				<section class="section-bg2-black">
+					<div class="inner">
+						<div class="section-title-area">
+							<h2 class="section-title-white">
+								SHOWROOM
+							</h2>
+							<div class="section-subtitle-white">
+								ショールームのご案内
+							</div>
+						</div>
+
+						<div class="flexbox-wrapper">
+							<div class="flexbox-card fadeInUp trs10">
+								<a href="">
+								<img src="img/sub-bg.jpg" alt="">
+								</a>
+								<h4>TITLE</h4>
+								<p>リード文が入ります。</p>
+								<a href=""><p class="btn">READ MORE</p></a>
+							</div>
+	
+							<div class="flexbox-card fadeInUp trs15">
+								<a href="">
+								<img src="img/sub-bg.jpg" alt="">
+								</a>
+								<h4>TITLE</h4>
+								<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+								<a href=""><p class="btn">READ MORE</p></a>
+							</div>
+	
+							<div class="flexbox-card fadeInUp trs20">
+								<a href="">
+								<img src="img/sub-bg.jpg" alt="">
+								</a>
+								<h4>TITLE</h4>
+								<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+								<a href=""><p class="btn">READ MORE</p></a>
+							</div>
+						</div>
+				</section>
+			</section>
+
+			<section class="section" id="work-flow">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							SERVICE FLOW
+						</h2>
+						<div class="section-subtitle">
+							サービス導入までの流れ
+						</div>
+					</div>
+
+					<div class="flexbox-wrapper fadeInUp">
+						<div class="flexbox-card fadeInUp trs10">
+							<a href="">
+							<img src="img/step.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。</p>
+							<a href=""><p class="btn2">READ MORE</p></a>
+						</div>
+
+						<!--FontAwesomはiタグで-->
+						<div class="step_arrow"><i class="fas fa-chevron-right"></i></div>
+
+						<div class="flexbox-card fadeInUp trs20">
+							<a href="">
+							<img src="img/step.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+							<a href=""><p class="btn2">READ MORE</p></a>
+						</div>
+
+						<div class="step_arrow"><i class="fas fa-chevron-right"></i></div>
+						
+						<div class="flexbox-card fadeInUp trs30">
+							<a href="">
+							<img src="img/step.jpg" alt="">
+							</a>
+							<h4>TITLE</h4>
+							<p>リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</p>
+							<a href=""><p class="btn2">READ MORE</p></a>
+						</div>
+					</div>
+
+					<a class="btn_l fadeInUp trs30" href="">詳細をさらに見る<img src="img/icon-forward-30w.png" class="btn_icon"></a>
+
+				</div>
+			</section>
+
+			<section class="section" id="dreams">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							OTHER
+						</h2>
+						<div class="section-subtitle">
+							その他、弊社の取り組み
+						</div>
+					</div>
+
+					<div class="dreams-wrapper fadeInUp">
+						<div id="demo1">
+							<ul>
+								<li>samplename</li>
+								<li>samplename<br>samplename</li>
+								<li>samplename<br>samplename<br>samplename</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<!--固定背景1-->
+			<section class="section-fixed-bg bg01">
+				<div class="inner">
+					<p class="fadeInUp">fixed-Background01<br>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+				</div>
+			</section>
+
+
+			<section class="section" id="freespace">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							FREE SPACE
+						</h2>
+						<div class="section-subtitle">
+							自由記述スペースです
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!--固定背景2-->
+			<section class="section-fixed-bg bg02">
+				<div class="inner">
+					<p>fixed-Background02</p>
+				</div>
+			</section>
+
+
+			<section class="section-map" id="access">
+				<div class="inner">
+					<div class="section-title-area">
+						<h2 class="section-title">
+							ACCESS
+						</h2>
+						<div class="section-subtitle">
+							弊社地図と最寄り駅・アクセスのご案内
+						</div>
+					</div>
+					<div class="section-body-map">
+						<div class="location">
+							住所：東京都国立市
+							中1-1-1 駅前マンション5F<br>
+							電話：03-1234-5678／営業時間：10:00～17:00／休日：月曜日
+						</div>
+						<div class="location-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.080620413774!2d139.44429791547728!3d35.69963363656944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e3ff57b36357%3A0x1e59732790405c29!2z5Zu956uL6aeF5YyX5Y-j4pGg!5e0!3m2!1sja!2sjp!4v1577551450372!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+
+		<footer id="footer">
+			<div class="pagetop">
+				<div id="js-pageTop">
+					<span>Page Top</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
 </body>
-
 </html>
